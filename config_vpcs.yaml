@@ -1,0 +1,25 @@
+##Declare all VPC information
+vpctest:
+  vpc_name: vpctest
+  ###True = 1, False = 0 
+  auto_create_subnetworks: False
+  routing_mode: GLOBAL
+  region:
+    asia-southeast1:
+      subnet_name: webzone
+      subnet: ["10.26.0.0/24"]
+    us-central1:
+      subnet_name: dbzone
+      subnet: ["10.26.1.0/24"]
+vpctest1:
+  vpc_name: vpctest1
+  ###True = 1, False = 0
+  auto_create_subnetworks: False
+  routing_mode: GLOBAL
+  region:
+    asia-southeast1:
+      subnet_name: webzone1
+      subnet: ["10.26.10.0/24"]
+    us-central1:
+      subnet_name: dbzone1
+      subnet: ["10.26.11.0/24"]
